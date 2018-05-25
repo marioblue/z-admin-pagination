@@ -12,7 +12,7 @@ usage
 <p>step2:import pagination from 'z-admin-pagination';</p>
 <p>step3:
 <br>
-```<pagination v-bind:pageData="pageData" @pageQuery="pageQuery"></pagination>```
+<pre><pagination v-bind:pageData="pageData" @pageQuery="pageQuery"></pagination></pre>
 </p>
 
 pageData structrue
