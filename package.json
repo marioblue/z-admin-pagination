@@ -1,0 +1,17 @@
+{
+  "name": "z-admin-pagination",
+  "version": "1.0.0",
+  "description": "a pagination for Z-Admin backend ,require vue.js",
+  "main": "index.js",
+  "repository": "https://github.com/marioblue/z-admin-pagination.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Z-Admin",
+    "ace",
+    "pagination"
+  ],
+  "author": "Mario",
+  "license": "MIT"
+}
