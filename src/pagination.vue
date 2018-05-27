@@ -24,7 +24,7 @@
                     <li class="page-item" v-if="pageData.first==false">
                         <a href="javascript:void(0)"  v-on:click="pageQuery(pageData.preIndex)" class="pagiv-prev">上一页</a> 
                     </li>
-                    <li v-for="link in pageData.linkNumbers" class="page-item" :class="{active:link == pageData.pageIndex}"> 
+                    <li class="page-item" v-for="link in pageData.linkNumbers" :class="{active:link == pageData.pageIndex}"> 
                         <a v-if="link != pageData.pageIndex" href="javascript:void(0)" v-on:click="pageQuery(link)" class="pagiv-number">{{link}}</a> 
                         <span v-if="link == pageData.pageIndex" class="cur">{{link}}</span>
                     </li> 

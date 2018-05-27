@@ -1,6 +1,6 @@
 {
   "name": "z-admin-pagination",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a pagination for Z-Admin backend ,require vue.js",
   "main": "index.js",
   "repository": "https://github.com/marioblue/z-admin-pagination.git",
