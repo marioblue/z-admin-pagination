@@ -1,10 +1,10 @@
 # z-admin-pagination
 a vue component
 
-for ace admin backend
+for bootstrap backend
 <p>http://ace.jeka.by/tables.html</p>
 
-a simple admin backend base on ace + laravel
+a simple admin backend base on bootstrap + laravel
 <p>http://adminn.orzzz.top/</p>
 
 usage

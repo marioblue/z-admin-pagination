@@ -10,41 +10,41 @@
             </div>
         </div>
         <div class="col-xs-8">
-            <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
-                <ul class="pagination">
-                    <li v-if="pageData.first==true" class="paginate_button previous disabled">
+            <nav aria-label="Page navigation example" style="text-align: right;">
+                <ul class="pagination justify-content-end" style="margin: 0;">
+                    <li v-if="pageData.first==true" class="page-item previous disabled">
                         <span  class="disabled">首页</span> 
                     </li>
-                    <li class="paginate_button" v-if="pageData.first==false">
+                    <li class="page-item" v-if="pageData.first==false">
                         <a href="javascript:void(0)"  v-on:click="pageQuery(1)">首页</a> 
                     </li>
-                    <li v-if="pageData.first==true" class="paginate_button disabled" >
+                    <li v-if="pageData.first==true" class="page-item disabled" >
                         <span class="disabled">上一页</span> 
                     </li>
-                    <li class="paginate_button" v-if="pageData.first==false">
+                    <li class="page-item" v-if="pageData.first==false">
                         <a href="javascript:void(0)"  v-on:click="pageQuery(pageData.preIndex)" class="pagiv-prev">上一页</a> 
                     </li>
-                    <li v-for="link in pageData.linkNumbers" v-bind:class="{paginate_button:true,'active':link == pageData.pageIndex}"> 
+                    <li v-for="link in pageData.linkNumbers" v-bind:class="{page-item:true,'active':link == pageData.pageIndex}"> 
                         <a v-if="link != pageData.pageIndex" href="javascript:void(0)" v-on:click="pageQuery(link)" class="pagiv-number">{{link}}</a> 
                         <span v-if="link == pageData.pageIndex" class="cur">{{link}}</span>
                     </li> 
-                    <li v-if="pageData.last==true" class="paginate_button next disabled">
+                    <li v-if="pageData.last==true" class="page-item next disabled">
                         <span>下一页</span> 
                     </li>
-                    <li class="paginate_button next" v-if="pageData.last==false">
+                    <li class="page-item next" v-if="pageData.last==false">
                         <a href="javascript:void(0)" v-on:click="pageQuery(pageData.nextIndex)">下一页</a>
                     </li>
-                    <li v-if="pageData.last==true" class="paginate_button disabled">
+                    <li v-if="pageData.last==true" class="page-item disabled">
                         <span  class="disabled">尾页</span> 
                     </li>
-                    <li v-if="pageData.last==false" class="paginate_button ">
+                    <li v-if="pageData.last==false" class="page-item ">
                         <a href="javascript:void(0)"  v-on:click="pageQuery(pageData.totalPage)">尾页</a> 
                     </li>
                     <li>
                         <span class="disable">{{pageData.pageIndex}} / {{pageData.totalPage}}</span>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </div>
 </template>
